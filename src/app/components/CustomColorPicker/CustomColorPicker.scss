@@ -1,0 +1,23 @@
+.color-picker {
+  line-height: 0;
+  display: table;
+
+  &.disabled > .color-picker__preview {
+    cursor: default;
+  }
+
+  .color-picker__preview {
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+
+    > div {
+      width: 36px;
+      height: 12px;
+      border-radius: 2px;
+    }
+  }
+}

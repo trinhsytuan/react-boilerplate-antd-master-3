@@ -1,0 +1,102 @@
+@import '~antd/lib/style/themes/default.less';
+
+header {
+  .trigger {
+    font-size: 16px;
+    line-height: 50px;
+    padding: 0 24px;
+    transition: color 0.3s;
+    vertical-align: top;
+
+    &:hover {
+      color: #1890ff;
+    }
+  }
+
+}
+
+.aside-menu {
+  height: calc(100% - @layout-header-height);
+}
+
+.sider-logo {
+  height: @layout-header-height;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px 0 10px 15px;
+  display: block;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  .logo {
+    float: left;
+    height: 100%;
+    width: 100%;
+    transition: width 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+
+
+  .toggle-menu {
+    float: right;
+    margin-right: 10px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &.collapsed {
+    padding-left: 24px;
+
+    .logo {
+      width: 32px;
+    }
+
+    .toggle-menu {
+      margin-right: 24.5px;
+    }
+  }
+}
+
+.site-layout {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  #content-container {
+    height: calc(100% - 50px);
+    position: relative;
+
+    .site-layout-background {
+      margin: 0 16px;
+      //margin: 0 16px 16px 16px;
+    }
+
+    &.login {
+      height: 100%;
+
+      .site-layout-background {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &:not(.login) #content {
+      flex: auto;
+      margin: 10px 0 16px;
+    }
+
+    &::-webkit-scrollbar {
+      display: block;
+    }
+  }
+
+  .site-layout-background {
+    background: #fff;
+    padding: 16px;
+    z-index: 1;
+  }
+}

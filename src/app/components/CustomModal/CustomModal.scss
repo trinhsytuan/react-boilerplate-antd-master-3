@@ -1,0 +1,48 @@
+.custom-modal {
+  .ant-modal-content {
+    .ant-modal-close .ant-modal-close-x {
+      width: 46px;
+      height: 46px;
+      line-height: 46px;
+      display: flex;
+
+      > svg {
+        margin: auto;
+
+        rect {
+          fill: #88a2f94d;
+        }
+      }
+
+      &:hover > svg rect {
+        color: #00199F;
+        fill: #00199F;
+      }
+    }
+
+    .ant-modal-body {
+      padding: 15px;
+
+      .custom-modal-header {
+        font-size: 14px;
+        font-weight: 500;
+        color: #00199F;
+        line-height: 16px;
+        margin-bottom: 15px;
+      }
+
+      .custom-modal-footer {
+        margin-top: 15px;
+
+        > * {
+          margin-right: 15px;
+          margin-left: 0;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

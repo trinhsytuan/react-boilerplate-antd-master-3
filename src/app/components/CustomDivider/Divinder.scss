@@ -1,0 +1,45 @@
+$sizes: 40px, 50px, 80px;
+$grid: "sm" "576", "md" "768", "lg" "992", "xl" "1200", "xxl" "1600";
+
+.custom-divider.ant-divider-horizontal {
+
+  @for $i from 1 through 10 {
+    &.divider-before-#{$i}-percent:before {
+      width: $i * 1% !important;
+    }
+
+    @each $name, $size in $grid {
+      @media (min-width: #{$size}px) {
+        &.divider-#{$name}-before-#{$i}-percent:before {
+          width: $i * 1% !important;
+        }
+      }
+    }
+  }
+
+  &.ant-divider-with-text-left {
+    &:before {
+      width: 0;
+    }
+
+    &:after {
+      width: 1%;
+    }
+
+
+    .ant-divider-inner__divider {
+      position: relative;
+      top: 50%;
+      flex: auto;
+      border-top: 1px solid transparent;
+      border-top-color: inherit;
+      border-bottom: 0;
+      transform: translateY(50%);
+      content: '';
+    }
+
+    .ant-divider-inner-extra {
+      flex: unset;
+    }
+  }
+}

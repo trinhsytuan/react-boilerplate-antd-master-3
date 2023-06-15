@@ -1,0 +1,11 @@
+.action-cell {
+  margin: -2.5px 0;
+
+  > *:nth-child(n) {
+    margin: 2.5px 4px !important;
+
+    .tag-action {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.user-permissions {
+  .ant-form-item-control {
+    z-index: 1000;
+
+    .collapse-permission .ant-collapse-item {
+      .ant-collapse-header {
+        padding: 4px 16px 4px 0;
+
+        .ant-collapse-arrow {
+          top: 9px;
+          right: 8px;
+        }
+      }
+
+      .ant-collapse-content .ant-collapse-content-box {
+        padding: 0;
+
+        table {
+          .ant-table-thead, .ant-table-tbody {
+            .ant-table-cell {
+              padding: 4px 8px 3px 8px;
+            }
+          }
+        }
+
+        .ant-pagination {
+          margin: 8px 0 0 0;
+        }
+      }
+    }
+  }
+}

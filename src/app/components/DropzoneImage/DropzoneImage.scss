@@ -1,0 +1,38 @@
+.custom-dropzone {
+
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  vertical-align: top;
+
+  position: relative;
+  padding: 0;
+  transition: border-color 0.3s;
+  border: 2px dashed #d9d9d9;
+  border-radius: 2px;
+
+  &:not(.disabled) {
+    cursor: pointer;
+
+    &:hover {
+      border-color: #00199F;
+    }
+  }
+
+  .bg-upload {
+    display: flex;
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}

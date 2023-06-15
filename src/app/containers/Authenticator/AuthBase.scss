@@ -1,0 +1,47 @@
+#login {
+  background-image: url("../../../assets/images/bg-01.jpg");
+  background-size: cover;
+  //background-color: #00199F;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  .login-form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    //height: 320px;
+    padding: 36px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    border-radius: 10px;
+
+    button {
+      width: 100%;
+      font-size: 15px;
+      height: unset;
+      border-radius: 25px;
+    }
+
+    .logo {
+      text-align: center;
+
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  .ant-form-item-explain, .ant-form-item-extra {
+    height: 22px;
+    font-size: 15px;
+  }
+
+  .ant-form-large .ant-form-item-label > label {
+    height: 30px;
+    font-size: 15px;
+  }
+
+}

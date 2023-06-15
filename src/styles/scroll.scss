@@ -1,0 +1,52 @@
+.custom-scrollbar {
+  overflow: overlay;
+  @supports (-moz-appearance:none) {
+    overflow: scroll;
+    scrollbar-width: thin;
+  }
+
+  &.show-scrollbar::-webkit-scrollbar,
+  &:hover::-webkit-scrollbar {
+    display: block;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 6px;
+    height: 6px;
+    margin-right: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 6px;
+
+    &:hover {
+      background-color: #999;
+    }
+  }
+}
+
+.custom-scrollbar-show::-webkit-scrollbar {
+  display: block;
+}
+
+.table-custom-scrollbar .ant-table-body {
+  @extend .custom-scrollbar;
+  @extend .custom-scrollbar-show;
+}
+
+.ant-modal-wrap {
+  @extend .custom-scrollbar;
+  @extend .custom-scrollbar-show;
+
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d2caca;
+    border-radius: 6px;
+
+    &:hover {
+      background-color: #cec9c9;
+    }
+  }
+}

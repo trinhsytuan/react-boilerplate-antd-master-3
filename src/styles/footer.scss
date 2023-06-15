@@ -1,0 +1,39 @@
+#footer {
+  align-self: center;
+  padding: calc(35px / 2);
+
+  .power-by {
+    display: flex;
+    height: 35px;
+
+    .power-by__text {
+      align-self: center;
+      font-size: 16px;
+
+      &.logo__think {
+        font-weight: 700;
+        color: #191936;
+      }
+
+      &.logo__labs {
+        font-weight: 700;
+        color: rgb(218, 23, 62);
+      }
+
+      &.logo__evn {
+        color: #164397;
+        font-weight: 700;
+      }
+
+      &.logo__npt {
+        color: #EE1D24;
+        font-style: italic;
+        font-weight: 700;
+      }
+    }
+
+    .power-by__logo {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  svg, i {
+    transition: transform 0.24s;
+  }
+
+  i {
+    font-size: 10px;
+  }
+}
+
+.filter-header {
+  transition-duration: .3s;
+
+  .ant-collapse-header {
+    padding: 0 !important;
+
+    .ant-divider-inner-text {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+  }
+
+  .ant-collapse-content-box {
+    padding: .25rem 0 0 0 !important;
+  }
+
+  .ant-form.ant-form-horizontal.ant-form-small .ant-col > .ant-form-item {
+    margin-bottom: .5rem;
+  }
+
+  .ant-form-vertical .ant-form-item {
+    margin-bottom: 5px;
+  }
+
+  .ant-collapse-content.ant-collapse-content-active {
+    //height: unset !important;
+  }
+}
+

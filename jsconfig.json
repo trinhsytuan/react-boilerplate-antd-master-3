@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@constants": ["./src/constants/CONSTANTS.js"],
+      "@url": ["./src/constants/URL.js"],
+      "@api": ["./src/constants/API.js"],
+      "@commons/*": ["./src/app/commons/*"],
+      "@containers/*": ["./src/app/containers/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@app/*": ["./src/app/*"]
+    }
+  }
+}
